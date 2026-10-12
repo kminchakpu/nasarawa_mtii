@@ -31,7 +31,7 @@ const services: Service[] = [
     title: "Co-operative Societies Registration",
     description:
       "Register your Co-operative Society today. We believe in the power of individuals coming together voluntarily, united by a common bond, to achieve their economic goals for mutual benefit.",
-    href: "/registration/cooperative",
+    href: "/registration/cooperative-registration",
     icon: (
       <svg
         viewBox="0 0 64 64"
@@ -67,7 +67,7 @@ const services: Service[] = [
     title: "Leasing / Haulage",
     description:
       "MTII offers long-term rental services to companies in Nasarawa State, supported by highly experienced personnel adhering to international standards.",
-    href: "/services/leasing-haulage",
+    href: "/leasing",
     icon: (
       <svg
         viewBox="0 0 64 64"
@@ -86,7 +86,7 @@ const services: Service[] = [
     title: "Faith Based Organisation Registration",
     description:
       "MTII facilitates the registration of your FBO, enabling you to focus on advocacy, relationship building, evidence development, and operations to advance shared priorities.",
-    href: "/registration/faith-based-organisation",
+    href: "/registration/fbo-registration",
     icon: (
       <svg
         viewBox="0 0 64 64"
