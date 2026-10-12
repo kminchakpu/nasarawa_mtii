@@ -1,0 +1,439 @@
+.aboutTabsSection {
+  width: 100%;
+  padding: 100px 0;
+  margin-top: 50px;
+  background-color: var(--color-background);
+}
+
+.container {
+  width: min(1200px,90%);
+  margin: 0 auto;
+}
+
+.tabsWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.tabNavigation {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 280px;
+  gap: 8px;
+}
+
+.navPill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navPill:hover {
+  background-color: rgba(255,255,255,0.05);
+  color: #ffb000;
+  border-color: #ffb000;
+}
+
+.navPill.active {
+  background-color: #ffb000;
+  color: #071d2b;
+  border-color: #ffb000;
+}
+
+.arrow {
+  font-size: 20px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.navPill:hover .arrow {
+  transform: translateX(5px);
+}
+
+.navPill.active .arrow {
+  transform: translateX(5px);
+}
+
+.tabContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.tabPanel {
+  width: 100%;
+  animation: fadeIn 0.35s ease;
+}
+
+.defaultContent {
+  padding: 10px 10px 30px 20px;
+}
+
+.panelNumber {
+  display: block;
+  margin-bottom: 20px;
+  color: #ffb000;
+  font-family: var(--font-play);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.defaultContent h2 {
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-family: var(--font-poppins);
+  font-size: clamp(32px,4vw,35px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.defaultContent p {
+  max-width: 800px;
+  margin: 0;
+  color: rgba(255,255,255,0.75);
+  font-family: var(--font-roboto);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.panelLine {
+  width: 80px;
+  height: 4px;
+  margin-top: 35px;
+  background-color: #ffb000;
+}
+
+.missionContent {
+  width: 100%;
+}
+
+.contentBlock {
+  margin-bottom: 80px;
+}
+
+.contentLabel {
+  display: block;
+  margin-bottom: 15px;
+  color: #ffb000;
+  font-family: var(--font-play);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.contentBlock h2 {
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-family: var(--font-play);
+  font-size: clamp(34px,4vw,35px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.contentBlock p {
+  max-width: 900px;
+  margin: 0 0 25px;
+  color: rgba(255,255,255,0.75);
+  font-family: var(--font-roboto);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.valuesSection {
+  margin-top: 20px;
+}
+
+.valuesHeading {
+  margin-bottom: 35px;
+}
+
+.valuesHeading h2 {
+  margin: 0 0 15px;
+  color: #ffffff;
+  font-family: var(--font-poppins);
+  font-size: clamp(34px,4vw,35px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.valuesHeading p {
+  max-width: 750px;
+  margin: 0;
+  color: rgba(255,255,255,0.7);
+  font-family: var(--font-roboto);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.valuesSection {
+  margin-top: 4rem;
+}
+
+.valuesHeading {
+  margin-bottom: 2rem;
+}
+
+.valuesHeading h2 {
+  margin: 0.5rem 0 1rem;
+}
+
+.valuesHeading p {
+  max-width: 700px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.valuesAccordion {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.accordionItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.accordionButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 0;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.accordionButton:hover {
+  color: #ffad00;
+}
+
+.accordionTitle {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 90%;
+}
+
+.valueNumber {
+  flex-shrink: 0;
+  color: #ffad00;
+  font-family: var(--font-play), sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.accordionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ffad00;
+  border-radius: 50%;
+  color: #ffad00;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.accordionOpen .accordionButton {
+  color: #ffad00;
+}
+
+.accordionOpen .accordionIcon {
+  background-color: #ffad00;
+  color: var(--color-background);
+}
+
+.accordionBody {
+  padding: 0 4rem 1.5rem 3.5rem;
+}
+
+.accordionBody p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.viewDetailsButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 12px 22px;
+  background: var(--color-button);
+  color: var(--color-button-text);
+  text-decoration: none;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.viewDetailsButton:hover {
+  transform: translateX(4px);
+}
+
+.viewDetailsButton span {
+  font-size: 18px;
+}
+
+/* =========================================
+   CONTENT LIST
+========================================= */
+
+.contentList {
+  max-width: 900px;
+  margin: 20px 0 30px;
+  padding-left: 25px;
+}
+
+.contentList li {
+  margin-bottom: 4px;
+  padding-left: 4px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.contentList li::marker {
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+.contentList strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .valuesSection {
+    margin-top: 3rem;
+  }
+
+  .accordionButton {
+    padding: 1.25rem 0;
+    font-size: 0.95rem;
+  }
+
+  .accordionTitle {
+    gap: 0.75rem;
+  }
+
+  .accordionBody {
+    padding: 0 2.5rem 1.25rem 2.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordionButton {
+    font-size: 0.9rem;
+  }
+
+  .accordionTitle {
+    max-width: 85%;
+  }
+
+  .valueNumber {
+    font-size: 0.9rem;
+  }
+
+  .accordionIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+
+  .accordionBody {
+    padding: 0 0 1.25rem 2.5rem;
+  }
+
+  .accordionBody p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}
+
+
+@media (max-width:900px) {
+  .aboutTabsSection {
+    padding: 70px 0;
+  }
+
+  .tabsWrapper {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .tabNavigation {
+    width: 100%;
+    flex: none;
+  }
+
+  .navPill {
+    padding: 15px 18px;
+  }
+
+  .tabContent {
+    width: 100%;
+  }
+
+  .defaultContent {
+    padding: 10px 0 30px;
+  }
+
+  .contentBlock {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width:600px) {
+  .aboutTabsSection {
+    padding: 50px 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .navPill {
+    font-size: 15px;
+    padding: 14px 16px;
+  }
+
+  .defaultContent h2,
+  .contentBlock h2,
+  .valuesHeading h2 {
+    font-size: 32px;
+  }
+
+  .defaultContent p,
+  .contentBlock p,
+  .valuesHeading p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}

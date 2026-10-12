@@ -1,0 +1,313 @@
+/* =========================================
+   Hero Section
+========================================= */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #06295c;
+}
+
+/* =========================================
+   Background Image
+========================================= */
+
+.heroImage {
+  position: absolute !important;
+  inset: 0;
+ 
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* =========================================
+   Overlay
+========================================= */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 30, 72, 0.92) 0%,
+      rgba(5, 42, 91, 0.78) 35%,
+      rgba(5, 42, 91, 0.42) 65%,
+      rgba(3, 30, 72, 0.18) 100%
+    );
+}
+
+/* =========================================
+   Hero Container
+========================================= */
+
+.heroContainer {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+/* =========================================
+   Hero Content
+========================================= */
+
+.heroContent {
+  max-width: 760px;
+}
+
+/* =========================================
+   Eyebrow
+========================================= */
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: #ffb000;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.eyebrow span {
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: 18px;
+}
+
+/* =========================================
+   Main Heading
+========================================= */
+
+.heroContent h1 {
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: clamp(48px, 5.5vw, 82px);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -1px;
+}
+
+/* Orange accent text */
+
+.heroContent h1 span {
+  color: #ffb000;
+}
+
+/* =========================================
+   Description
+========================================= */
+
+.description {
+  max-width: 650px;
+  margin: 28px 0 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* =========================================
+   Hero Buttons
+========================================= */
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 38px;
+}
+
+/* Primary Button */
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  padding: 17px 28px;
+  color: #ffffff;
+  background: #242424;
+  border: 2px solid #ffad00;
+  border-radius: 5px;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.primaryButton:hover {
+  background: #e99d00;
+  border-color: #e99d00;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 173, 0, 0.25);
+}
+
+/* Secondary Button */
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  padding: 17px 28px;
+  color: #ffffff;
+  background:#0F4C5C;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.secondaryButton:hover {
+  color: #06295c;
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   Tablet
+========================================= */
+
+@media (max-width: 1100px) {
+  .hero {
+    min-height: 680px;
+  }
+
+  .heroContainer {
+    width: 90%;
+  }
+
+  .heroContent {
+    max-width: 680px;
+  }
+
+  .heroContent h1 {
+    font-size: clamp(46px, 6vw, 68px);
+  }
+}
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 680px;
+    align-items: center;
+  }
+
+  .heroImage {
+    object-position: 65% center;
+  }
+
+  .overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(3, 30, 72, 0.92) 0%,
+        rgba(5, 42, 91, 0.72) 100%
+      );
+  }
+
+  .heroContainer {
+    width: 88%;
+    padding-top: 50px;
+  }
+
+  .heroContent {
+    max-width: 100%;
+  }
+
+  .eyebrow {
+    margin-bottom: 14px;
+
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .heroContent h1 {
+    font-size: clamp(40px, 10vw, 58px);
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+  }
+
+  .description {
+    margin-top: 22px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .scrollIndicator {
+    display: none;
+  }
+}
+
+/* =========================================
+   Small Phones
+========================================= */
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 650px;
+  }
+
+  .heroContainer {
+    width: 88%;
+  }
+
+  .heroContent h1 {
+    font-size: 39px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    min-width: 0;
+    padding: 15px 20px;
+    font-size: 13px;
+  }
+}
+

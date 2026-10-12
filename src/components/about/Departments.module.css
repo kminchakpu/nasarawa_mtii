@@ -1,0 +1,430 @@
+/* =========================================
+   DEPARTMENTS SECTION
+========================================= */
+
+.departments {
+  width: 100%;
+  padding: 150px 0;
+  background: var(--color-background);
+  overflow: hidden;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.sectionHeader {
+  margin-bottom: 65px;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.titleWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.titleLine {
+  display: block;
+  width: 5px;
+  min-width: 5px;
+  height: 42px;
+  margin-top: 4px;
+  background: #ffad00;
+}
+
+.titleWrapper h2 {
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: clamp(38px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.titleWrapper h2 span {
+  color: #ffffff;
+}
+
+.titleWrapper h2::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  background: #08a9d1;
+  vertical-align: bottom;
+  margin-bottom: 9px;
+}
+
+/* =========================================
+   HEADER BOTTOM
+========================================= */
+
+.headerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 35px;
+}
+
+.headerBottom p {
+  max-width: 850px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   VIEW ALL
+========================================= */
+
+.viewAll {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  color: #08a9d1;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.viewAll span {
+  color: #ffad00;
+  font-size: 16px;
+  transition: transform 0.25s ease;
+}
+
+.viewAll:hover {
+  color: #ffffff;
+}
+
+.viewAll:hover span {
+  transform: translateX(4px);
+}
+
+/* =========================================
+   DEPARTMENTS GRID
+========================================= */
+
+.departmentsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* =========================================
+   DEPARTMENT CARD
+========================================= */
+
+.card {
+  position: relative;
+  min-height: 360px;
+  padding: 50px 55px;
+  box-sizing: border-box;
+  background: #082d48;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: #0a3452;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffc247;
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.iconWrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.icon {
+  width: 58px;
+  height: 58px;
+  fill: none;
+  stroke: #ffad00;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition:
+    transform 0.3s ease,
+    stroke 0.3s ease;
+}
+
+.card:hover .icon {
+  transform: scale(1.08);
+  stroke: #ffc247;
+}
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.card h3 {
+  margin: 0 0 27px;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   LEARN MORE
+========================================= */
+
+.learnMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 30px;
+  color: #08a9d1;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.learnMore span {
+  color: #ffad00;
+  font-size: 16px;
+  transition: transform 0.25s ease;
+}
+
+.learnMore:hover {
+  color: #ffffff;
+}
+
+.learnMore:hover span {
+  transform: translateX(4px);
+}
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1450px;
+  }
+
+  .card {
+    padding: 58px 60px;
+    min-height: 400px;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .departmentsGrid {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 40px 35px;
+    min-height: 390px;
+  }
+
+  .card h3 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+
+  .headerBottom p {
+    font-size: 16px;
+  }
+}
+
+/* =========================================
+   TABLET / SMALL LAPTOP
+========================================= */
+
+@media (max-width: 900px) {
+  .departments {
+    padding: 90px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 50px;
+  }
+
+  .titleWrapper h2 {
+    font-size: 42px;
+  }
+
+  .headerBottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .departmentsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    min-height: 380px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .departments {
+    padding: 75px 0;
+  }
+
+  .container {
+    padding: 0 22px;
+  }
+
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+
+  .titleWrapper {
+    gap: 14px;
+  }
+
+  .titleLine {
+    width: 4px;
+    min-width: 4px;
+    height: 34px;
+  }
+
+  .titleWrapper h2 {
+    font-size: 34px;
+    line-height: 1.25;
+  }
+
+  .titleWrapper h2::after {
+    width: 6px;
+    height: 6px;
+    margin-bottom: 5px;
+  }
+
+  .headerBottom {
+    margin-top: 25px;
+  }
+
+  .headerBottom p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .departmentsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    min-height: 350px;
+    padding: 40px 35px;
+  }
+
+  .iconWrapper {
+    margin-bottom: 22px;
+  }
+
+  .card h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .card p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .titleWrapper h2 {
+    font-size: 30px;
+  }
+
+  .card {
+    min-height: 330px;
+    padding: 35px 28px;
+  }
+
+  .card h3 {
+    font-size: 21px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,340 @@
+/* =========================================
+   HOW TO REGISTER
+========================================= */
+
+.howToRegister {
+  width: 100%;
+}
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.intro {
+  max-width: 850px;
+  margin-bottom: 50px;
+}
+
+.contentLabel {
+  display: block;
+  margin-bottom: 15px;
+  color: #ffb000;
+  font-family: var(--font-play), sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.intro h2 {
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: clamp(34px, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.intro p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   STEPS
+========================================= */
+
+.steps {
+  width: 100%;
+  max-width: 900px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* =========================================
+   STEP NUMBER
+========================================= */
+
+.stepNumberWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 64px;
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  background-color: #ffb000;
+  color: #071d2b;
+  font-family: var(--font-play), sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.stepNumberWrapper span {
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 13px;
+}
+
+/* =========================================
+   STEP CARD
+========================================= */
+
+.stepCard {
+  flex: 1;
+  margin-bottom: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.lightCard {
+  background-color: #f5f5f5;
+  color: #071d2b;
+}
+
+.darkCard {
+  background-color: #083f61;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.stepCard h3 {
+  margin: 0 0 18px;
+  font-family: var(--font-play), sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.lightCard h3 {
+  color: #071d2b;
+}
+
+.darkCard h3 {
+  color: #ffb000;
+}
+
+.stepText {
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.lightCard .stepText {
+  color: #333333;
+}
+
+.darkCard .stepText {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.stepText strong {
+  font-weight: 700;
+}
+
+.lightCard .stepText strong {
+  color: #071d2b;
+}
+
+.darkCard .stepText strong {
+  color: #ffffff;
+}
+
+/* =========================================
+   REGISTRATION SECTION
+========================================= */
+
+.registrationSection {
+  margin-top: 25px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.registrationSection p {
+  margin: 0 0 25px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   REGISTRATION BUTTONS
+========================================= */
+
+.registrationButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.registrationButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-width: 240px;
+  padding: 14px 20px;
+  background-color: #ffb000;
+  color: #071d2b;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.registrationButton:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.registrationButton span {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.registrationButton:hover span {
+  transform: translateX(5px);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .intro h2 {
+    font-size: 34px;
+  }
+
+  .intro p {
+    font-size: 17px;
+  }
+
+  .stepCard {
+    padding: 25px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .intro {
+    margin-bottom: 40px;
+  }
+
+  .intro h2 {
+    font-size: 32px;
+  }
+
+  .intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .step {
+    gap: 12px;
+  }
+
+  .stepNumberWrapper {
+    flex: 0 0 50px;
+  }
+
+  .stepNumber {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .stepNumberWrapper span {
+    font-size: 12px;
+  }
+
+  .stepCard {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  .stepCard h3 {
+    font-size: 20px;
+  }
+
+  .stepText {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .registrationButtons {
+    flex-direction: column;
+  }
+
+  .registrationButton {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+  .contentLabel {
+    font-size: 16px;
+  }
+
+  .intro h2 {
+    font-size: 29px;
+  }
+
+  .intro p {
+    font-size: 15px;
+  }
+
+  .step {
+    gap: 10px;
+  }
+
+  .stepNumberWrapper {
+    flex: 0 0 42px;
+  }
+
+  .stepNumber {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    border-width: 3px;
+  }
+
+  .stepCard {
+    padding: 17px;
+  }
+
+  .stepCard h3 {
+    font-size: 18px;
+  }
+
+  .stepText {
+    font-size: 14px;
+  }
+}

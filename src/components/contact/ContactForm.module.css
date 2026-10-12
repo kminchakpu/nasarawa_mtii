@@ -1,0 +1,187 @@
+.contactFormSection {
+  width: 100%;
+  padding: 90px 0;
+  background: #212529;
+  color: #ffffff;
+}
+
+.container {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.formHeader {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #ffb000;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.formHeader h2 {
+  margin: 0 0 15px;
+  color: #ffffff;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.formHeader p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #b8c7d9;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ==============================
+   FORM
+============================== */
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 45px;
+  background: #0b2a3f;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.formGroup label {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 16px;
+  border: 1px solid #29445a;
+  border-radius: 4px;
+  outline: none;
+  background: #071d2b;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.formGroup input {
+  height: 52px;
+}
+
+.formGroup textarea {
+  min-height: 170px;
+  resize: vertical;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #8295a9;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #ffb000;
+  box-shadow: 0 0 0 2px rgba(255, 176, 0, 0.12);
+}
+
+/* ==============================
+   BUTTON
+============================== */
+
+.submitButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: fit-content;
+  min-width: 170px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 4px;
+  background: #ffb000;
+  color: #071d2b;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background: #ffc233;
+  transform: translateY(-2px);
+}
+
+.submitButton span {
+  font-size: 1.2rem;
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 768px) {
+  .contactFormSection {
+    padding: 70px 0;
+  }
+
+  .contactForm {
+    padding: 35px;
+  }
+
+  .formHeader h2 {
+    font-size: 2.3rem;
+  }
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 640px) {
+  .contactFormSection {
+    padding: 60px 0;
+  }
+
+  .container {
+    width: min(100% - 32px, 900px);
+  }
+
+  .formHeader {
+    margin-bottom: 30px;
+  }
+
+  .formHeader h2 {
+    font-size: 2rem;
+  }
+
+  .formHeader p {
+    font-size: 0.95rem;
+  }
+
+  .contactForm {
+    padding: 25px 20px;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}

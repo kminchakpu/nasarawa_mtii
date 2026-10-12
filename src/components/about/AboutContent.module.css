@@ -1,0 +1,340 @@
+.content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contentBlock {
+  margin-bottom: 70px;
+}
+
+.contentLabel {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #ffc107;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.contentBlock h2 {
+  margin: 0 0 24px;
+  color: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.contentBlock p {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.contentBlock p:last-child {
+  margin-bottom: 0;
+}
+
+/* --------------------------------
+   About MTII Introduction
+-------------------------------- */
+
+.introduction {
+  margin-bottom: 60px;
+}
+
+.introduction h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.introduction p {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* --------------------------------
+   Mission & Vision
+-------------------------------- */
+
+.missionSection,
+.visionSection {
+  margin-bottom: 65px;
+}
+
+.missionSection h2,
+.visionSection h2 {
+  margin: 0 0 22px;
+  color: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.missionSection p,
+.visionSection p {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* --------------------------------
+   Core Values
+-------------------------------- */
+
+.valuesSection {
+  margin-top: 70px;
+}
+
+.valuesHeading {
+  margin-bottom: 30px;
+}
+
+.valuesHeading h2 {
+  margin: 0 0 15px;
+  color: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.valuesHeading p {
+  max-width: 700px;
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* --------------------------------
+   Core Values Accordion
+-------------------------------- */
+
+.valuesAccordion {
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+
+.accordionItem {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordionButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 22px 5px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  font-family: var(--font-poppins), sans-serif;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.accordionButton:hover {
+  color: #ffc107;
+}
+
+.accordionTitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.valueNumber {
+  flex-shrink: 0;
+  color: #ffc107;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.accordionTitle > span:last-child {
+  color: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.accordionButton:hover .accordionTitle > span:last-child {
+  color: #ffc107;
+}
+
+.accordionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  transition: all 0.25s ease;
+}
+
+.accordionButton:hover .accordionIcon {
+  color: #fff;
+  background: #071d2b;
+}
+
+.accordionOpen .accordionIcon {
+  color: #fff;
+  background: #071d2b;
+}
+
+.accordionBody {
+  padding: 0 55px 25px 48px;
+}
+
+.accordionBody p {
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* --------------------------------
+   Content Divider
+-------------------------------- */
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 50px 0;
+  background: #ddd;
+}
+
+/* --------------------------------
+   Responsive
+-------------------------------- */
+
+@media (max-width: 992px) {
+  .content {
+    max-width: 100%;
+  }
+
+  .contentBlock {
+    margin-bottom: 55px;
+  }
+
+  .contentBlock h2,
+  .introduction h2 {
+    font-size: 32px;
+  }
+
+  .missionSection h2,
+  .visionSection h2,
+  .valuesHeading h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentBlock {
+    margin-bottom: 45px;
+  }
+
+  .contentBlock h2,
+  .introduction h2 {
+    font-size: 28px;
+  }
+
+  .missionSection h2,
+  .visionSection h2,
+  .valuesHeading h2 {
+    font-size: 25px;
+  }
+
+  .contentBlock p,
+  .missionSection p,
+  .visionSection p,
+  .introduction p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .accordionButton {
+    padding: 18px 0;
+  }
+
+  .accordionTitle {
+    gap: 14px;
+  }
+
+  .accordionTitle > span:last-child {
+    font-size: 15px;
+  }
+
+  .accordionBody {
+    padding: 0 35px 20px 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentBlock h2,
+  .introduction h2 {
+    font-size: 25px;
+  }
+
+  .missionSection h2,
+  .visionSection h2,
+  .valuesHeading h2 {
+    font-size: 22px;
+  }
+
+  .contentBlock p,
+  .missionSection p,
+  .visionSection p,
+  .introduction p {
+    font-size: 14px;
+  }
+
+  .accordionTitle {
+    gap: 10px;
+  }
+
+  .valueNumber {
+    font-size: 12px;
+  }
+
+  .accordionTitle > span:last-child {
+    font-size: 14px;
+  }
+
+  .accordionIcon {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+
+  .accordionBody {
+    padding: 0 20px 20px 32px;
+  }
+}

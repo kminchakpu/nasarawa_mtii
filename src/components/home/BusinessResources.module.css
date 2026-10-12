@@ -1,0 +1,276 @@
+.businessResources {
+  width: 100%;
+  padding: 80px 0;
+  background: var(--color-background);
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.tabsContainer {
+  display: flex;
+  align-items: stretch;
+  gap: 45px;
+}
+
+.tabNavigation {
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navPill {
+  width: 100%;
+  min-height: 62px;
+  padding: 16px 22px;
+  border: 1px solid #e1e6e9;
+  border-radius: 10px;
+  background: #f5f7f8;
+  color: #071d2b;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.navPill:hover {
+  background: #eaf1f5;
+  border-color: #08a9d1;
+  transform: translateX(4px);
+}
+
+.navPill.active {
+  background: #035E7B;
+  border-color: #f3f1a3;
+  color: #ffffff;
+}
+
+.arrow {
+  color: #ffad00;
+  font-size: 18px;
+  transition: transform 0.25s ease;
+}
+
+.navPill:hover .arrow,
+.navPill.active .arrow {
+  transform: translateX(5px);
+}
+
+.tabContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.tabPanel {
+  position: relative;
+  min-height: 390px;
+  padding: 50px 60px;
+  box-sizing: border-box;
+  background: #082d48;
+  border-left: 5px solid #ffad00;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+}
+
+.panelNumber {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: rgba(255, 173, 0, 0.15);
+  font-family: var(--font-play), sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tabPanel h2 {
+  position: relative;
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.tabPanel p {
+  position: relative;
+  max-width: 760px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .tabsContainer {
+    gap: 30px;
+  }
+
+  .tabNavigation {
+    width: 260px;
+  }
+
+  .tabPanel {
+    padding: 45px;
+  }
+}
+
+.tabPanel p {
+  margin-bottom: 18px;
+}
+
+.tabPanel a {
+  color: #ffad00;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.tabPanel a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.description p {
+  margin: 0 0 18px;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+.description a {
+  color: #ffad00;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.description a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .businessResources {
+    padding: 80px 0;
+  }
+
+  .tabsContainer {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .tabNavigation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .navPill {
+    border-radius: 12px;
+  }
+
+  .tabPanel {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .businessResources {
+    padding: 65px 0;
+  }
+
+  .container {
+    padding: 0 22px;
+  }
+
+  .tabNavigation {
+    grid-template-columns: 1fr;
+  }
+
+  .navPill {
+    min-height: 55px;
+    padding: 14px 18px;
+    font-size: 14px;
+  }
+
+  .tabPanel {
+    min-height: 330px;
+    padding: 40px 30px;
+  }
+
+  .panelNumber {
+    top: 20px;
+    right: 25px;
+    font-size: 60px;
+  }
+
+  .tabPanel h2 {
+    font-size: 29px;
+  }
+
+  .tabPanel p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .tabPanel {
+    padding: 35px 25px;
+  }
+
+  .tabPanel h2 {
+    font-size: 25px;
+  }
+}

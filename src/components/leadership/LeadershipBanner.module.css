@@ -1,0 +1,109 @@
+.leadershipBanner {
+  background: #212529;
+  padding: 5rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.contentColumn {
+  flex: 0 0 58.333%;
+  max-width: 58.333%;
+}
+
+.content {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.content h1 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+  font-family: var(--font-play);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.content p {
+  margin: 0 0 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-roboto);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.imageColumn {
+  flex: 0 0 41.667%;
+  max-width: 41.667%;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 3rem 0;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+@media (min-width: 1200px) {
+  .content {
+    text-align: left;
+  }
+
+  .content h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .imageColumn {
+    display: none;
+  }
+
+  .contentColumn {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .leadershipBanner {
+    padding: 3rem 0;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .contentColumn {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .content {
+    margin: 1.5rem 0;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}

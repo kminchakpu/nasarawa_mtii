@@ -1,0 +1,177 @@
+.easeOfBusiness {
+  width: 100%;
+  padding: 30px 0;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  column-gap: 90px;
+  align-items: start;
+}
+
+.intro {
+  max-width: 560px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.intro h2 {
+  position: relative;
+  margin: 0 0 28px;
+  padding-left: 20px;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: clamp(42px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.intro h2::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 5px;
+  height: 48px;
+  background: #ffad00;
+}
+
+.intro h2 span {
+  color: #ffad00;
+}
+
+.lead {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.description {
+  padding-top: 36px;
+}
+
+.description p {
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.68);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .contentGrid {
+    column-gap: 50px;
+  }
+
+  .intro h2 {
+    font-size: 50px;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .description p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 900px) {
+  .easeOfBusiness {
+    padding: 90px 0;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+  }
+
+  .intro {
+    max-width: 700px;
+  }
+
+  .description {
+    padding-top: 0;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 600px) {
+  .easeOfBusiness {
+    padding: 75px 0;
+  }
+
+  .container {
+    padding: 0 22px;
+  }
+
+  .eyebrow {
+    font-size: 14px;
+  }
+
+  .intro h2 {
+    margin-bottom: 22px;
+    padding-left: 15px;
+    font-size: 40px;
+  }
+
+  .intro h2::before {
+    width: 4px;
+    height: 36px;
+  }
+
+  .lead {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .description p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .intro h2 {
+    font-size: 34px;
+  }
+
+  .lead,
+  .description p {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,153 @@
+.aboutTabsSection {
+  width: 100%;
+  padding: 100px 0;
+  margin-top: 50px;
+  background-color: var(--color-background);
+}
+
+.container {
+  width: min(1200px,90%);
+  margin: 0 auto;
+}
+
+.tabsWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.tabNavigation {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 280px;
+  gap: 8px;
+}
+
+.navPill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navPill:hover {
+  background-color: rgba(255,255,255,0.05);
+  color: #ffb000;
+  border-color: #ffb000;
+}
+
+.navPill.active {
+  background-color: #ffb000;
+  color: #071d2b;
+  border-color: #ffb000;
+}
+
+.arrow {
+  font-size: 20px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.navPill:hover .arrow {
+  transform: translateX(5px);
+}
+
+.navPill.active .arrow {
+  transform: translateX(5px);
+}
+
+.tabContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.tabPanel {
+  width: 100%;
+  animation: fadeIn 0.35s ease;
+}
+
+.defaultContent {
+  padding: 10px 10px 30px 20px;
+}
+
+.panelNumber {
+  display: block;
+  margin-bottom: 20px;
+  color: #ffb000;
+  font-family: var(--font-play);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.defaultContent h2 {
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-family: var(--font-poppins);
+  font-size: clamp(32px,4vw,35px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.defaultContent p {
+  max-width: 800px;
+  margin: 0;
+  color: rgba(255,255,255,0.75);
+  font-family: var(--font-roboto);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.panelLine {
+  width: 80px;
+  height: 4px;
+  margin-top: 35px;
+  background-color: #ffb000;
+}
+
+.missionContent {
+  width: 100%;
+}
+
+.contentBlock {
+  margin-bottom: 80px;
+}
+
+.contentLabel {
+  display: block;
+  margin-bottom: 15px;
+  color: #ffb000;
+  font-family: var(--font-play);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.contentBlock h2 {
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-family: var(--font-poppins);
+  font-size: clamp(34px,4vw,35px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.contentBlock p {
+  max-width: 900px;
+  margin: 0 0 25px;
+  color: rgba(255,255,255,0.75);
+  font-family: var(--font-roboto);
+  font-size: 18px;
+  line-height: 1.8;
+}

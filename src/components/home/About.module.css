@@ -1,0 +1,488 @@
+/* =========================================
+   About Section
+========================================= */
+
+.about {
+  width: 100%;
+  padding: 110px 0;
+  background: #212529;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   Main Container
+========================================= */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+}
+
+
+/* =========================================
+   Image Column
+========================================= */
+
+.imageColumn {
+  position: relative;
+  width: 100%;
+}
+
+
+/* =========================================
+   Image Frame
+========================================= */
+
+.imageFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 18px;
+  box-sizing: border-box;
+  background: #082d48;
+}
+
+
+/* =========================================
+   Image
+========================================= */
+
+.aboutImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 8px solid rgba(245, 191, 66, 0.3);
+}
+
+
+/* =========================================
+   Content
+========================================= */
+
+.content {
+  width: 100%;
+  max-width: 600px;
+}
+
+
+/* =========================================
+   Heading
+========================================= */
+
+.headingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+
+.headingLine {
+  display: block;
+  width: 5px;
+  height: 42px;
+  flex-shrink: 0;
+  background: #ffad00;
+}
+
+
+.headingWrapper h2 {
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: clamp(38px, 4vw, 52px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+
+/* Blue accent on heading */
+
+.headingWrapper h2 span {
+  color: #08a9d1;
+}
+
+
+/* =========================================
+   Intro Paragraph
+========================================= */
+
+.intro {
+  margin: 0 0 32px;
+  color: #ffffff;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   Description
+========================================= */
+
+.description {
+  margin: 0 0 25px;
+  color: rgba(255, 255, 255, 0.72);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   Statistics
+========================================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 35px;
+}
+
+
+/* =========================================
+   Individual Statistic
+========================================= */
+
+.stat {
+  position: relative;
+  padding-left: 15px;
+}
+
+
+/* Decorative dot */
+
+.statDot {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #08a9d1;
+}
+
+
+/* Number */
+
+.stat strong {
+  display: block;
+  color: #ffad00;
+  font-family: var(--font-play), sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+
+/* Label */
+
+.stat p {
+  margin: 25px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-play), sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   Button
+========================================= */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 38px;
+  padding: 14px 25px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffad00;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.button span {
+  font-size: 18px;
+  transition: transform 0.25s ease;
+}
+
+
+.button:hover {
+  color: #062235;
+  background: #ffad00;
+  transform: translateY(-2px);
+}
+
+
+.button:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   Large Screens
+========================================= */
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1350px;
+    gap: 110px;
+  }
+}
+
+
+/* =========================================
+   Tablet
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .about {
+    padding: 90px 0;
+  }
+
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 0 30px;
+  }
+
+
+  .imageFrame {
+    padding: 14px;
+  }
+
+
+  .headingWrapper {
+    gap: 14px;
+    margin-bottom: 25px;
+  }
+
+
+  .headingLine {
+    width: 4px;
+    height: 35px;
+  }
+
+
+  .headingWrapper h2 {
+    font-size: 38px;
+  }
+
+
+  .intro {
+    font-size: 17px;
+  }
+
+
+  .description {
+    font-size: 15px;
+  }
+
+
+  .stats {
+    gap: 20px;
+  }
+
+
+  .stat strong {
+    font-size: 38px;
+  }
+
+}
+
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 768px) {
+
+  .about {
+    padding: 75px 0;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 24px;
+  }
+
+
+  .imageColumn {
+    width: 100%;
+  }
+
+
+  .imageFrame {
+    aspect-ratio: 1 / 1;
+    padding: 12px;
+  }
+
+
+  .content {
+    max-width: 100%;
+  }
+
+
+  .headingWrapper {
+    margin-bottom: 25px;
+  }
+
+
+  .headingLine {
+    height: 35px;
+  }
+
+
+  .headingWrapper h2 {
+    font-size: 40px;
+  }
+
+
+  .intro {
+    font-size: 17px;
+
+    line-height: 1.7;
+  }
+
+
+  .description {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+
+  .stats {
+    gap: 15px;
+    margin-top: 35px;
+  }
+
+
+  .stat {
+    padding-left: 12px;
+  }
+
+
+  .stat strong {
+    font-size: 34px;
+  }
+
+
+  .stat p {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================
+   Small Phones
+========================================= */
+
+@media (max-width: 480px) {
+
+  .about {
+    padding: 65px 0;
+  }
+
+
+  .container {
+    padding: 0 20px;
+  }
+
+
+  .imageFrame {
+    padding: 10px;
+  }
+
+
+  .headingWrapper {
+    gap: 12px;
+  }
+
+
+  .headingLine {
+    width: 4px;
+
+    height: 30px;
+  }
+
+
+  .headingWrapper h2 {
+    font-size: 32px;
+  }
+
+
+  .intro {
+    font-size: 16px;
+  }
+
+
+  .description {
+    font-size: 14px;
+  }
+
+
+  .stats {
+    gap: 10px;
+  }
+
+
+  .stat {
+    padding-left: 10px;
+  }
+
+
+  .statDot {
+    width: 4px;
+    height: 4px;
+  }
+
+
+  .stat strong {
+    font-size: 29px;
+  }
+
+
+  .stat p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+
+  .button {
+    margin-top: 30px;
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+
+}

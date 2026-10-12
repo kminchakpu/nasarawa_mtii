@@ -1,0 +1,182 @@
+.accordion {
+  width: 100%;
+}
+
+.accordionItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.accordionItem:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.accordionHeader {
+  margin: 0;
+}
+
+.accordionButton {
+  width: 100%;
+  min-height: 65px;
+  padding: 18px 0;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.accordionButton:hover {
+  color: #ffad00;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffad00;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.open .icon {
+  transform: rotate(45deg);
+}
+
+.accordionCollapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.open .accordionCollapse {
+  grid-template-rows: 1fr;
+}
+
+.accordionBody {
+  min-height: 0;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.content {
+  padding: 0 45px 30px 0;
+}
+
+.content h4 {
+  margin: 25px 0 12px;
+  color: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.content h4:first-child {
+  margin-top: 5px;
+}
+
+.content p {
+  margin: 0 0 18px;
+}
+
+.content ul {
+  margin: 0 0 20px;
+  padding-left: 25px;
+}
+
+.content li {
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+
+.content strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.content a {
+  color: #ffad00;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.content a:hover {
+  color: #ffffff;
+}
+
+.content h5 {
+  margin: 22px 0 10px;
+  color: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.content h5:first-of-type {
+  margin-top: 5px;
+}
+
+.content ul {
+  margin: 0 0 20px;
+  padding-left: 25px;
+}
+
+.content li {
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.content li::marker {
+  color: #ffad00;
+}
+
+.content strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .accordionButton {
+    min-height: 58px;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+
+  .accordionBody {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .content {
+    padding-right: 15px;
+    padding-bottom: 25px;
+  }
+
+  .content h4 {
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    font-size: 21px;
+  }
+}

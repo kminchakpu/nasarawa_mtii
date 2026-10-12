@@ -1,0 +1,327 @@
+.footer {
+  width: 100%;
+  background: #212529;
+  color: #b5bdc8;
+  padding: 82px 0 28px;
+  border-top: 3px solid rgba(245, 191, 66, 0.3);
+}
+
+.container {
+  width: min(100% - 48px, 1580px);
+  margin: 0 auto;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 1.25fr 0.8fr 1.2fr 1.5fr;
+  gap: 80px;
+  padding-bottom: 80px;
+}
+
+/* =========================
+   COMPANY SECTION
+========================= */
+
+.companyInfo {
+  max-width: 360px;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logoTitle {
+  margin: 0;
+  color: #f3f4f5;
+  text-align: center;
+  font-size: 34px;
+  font-family: var(--font-play);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.logoSubtitle {
+  margin: 8px 0 0;
+  color: #a9840a;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.description {
+  margin: 36px 0 0;
+  max-width: 340px;
+  color: #c3c8d0;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 78px;
+}
+
+.socialLink {
+  width: 41px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #137aa4;
+  border-radius: 6px;
+  color: #09263d;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.socialLink:hover {
+  background: #ffbd18;
+  transform: translateY(-4px);
+}
+
+.socialLink svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.iconFill {
+  fill: currentColor;
+  stroke: none;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.linkColumn h3,
+.newsletter h3 {
+  margin: 0;
+  color: #f1f2f4;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: var(--font-play);
+}
+
+.headingLine {
+  width: 70px;
+  height: 3px;
+  margin-top: 27px;
+  background: #a9840a;
+  border-radius: 10px;
+}
+
+.linkColumn ul {
+  list-style: none;
+  margin: 22px 0 0;
+  padding: 0;
+}
+
+.linkColumn li {
+  margin-bottom: 28px;
+}
+
+.linkColumn a {
+  color: #b8bec7;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: var(--font-play);
+  font-weight: 400;
+  transition: color 0.25s ease;
+}
+
+.linkColumn a:hover {
+  color: #ffbd18;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+  max-width: 510px;
+}
+
+.newsletter p {
+  margin: 23px 0 45px;
+  color: #b8bec7;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: var(--font-play);
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter input {
+  width: 100%;
+  height: 59px;
+  padding: 0 28px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #14334a;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.newsletter input::placeholder {
+  color: #aeb6c0;
+  opacity: 1;
+}
+
+.newsletter input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 189, 24, 0.5);
+}
+
+.newsletter button {
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 10px;
+  background: #ffbd18;
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.newsletter button:hover {
+  background: #e9a900;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   BOTTOM SECTION
+========================= */
+
+.bottomSection {
+  min-height: 64px;
+  padding-top: 37px;
+  border-top: 1px solid #294256;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.bottomSection p {
+  margin: 0;
+  color: #b6bdc6;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: var(--font-play);
+}
+
+.bottomSection a {
+  color: #ffbd18;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 1100px) {
+  .topSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 80px;
+  }
+
+  .newsletter {
+    max-width: 100%;
+  }
+
+  .socialLinks {
+    margin-top: 45px;
+  }
+}
+
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
+
+@media (max-width: 650px) {
+  .footer {
+    padding: 60px 0 25px;
+  }
+
+  .container {
+    width: min(100% - 32px, 1580px);
+  }
+
+  .topSection {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding-bottom: 55px;
+  }
+
+  .logoTitle {
+    font-size: 28px;
+  }
+
+  .logoSubtitle {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-top: 28px;
+  }
+
+  .socialLinks {
+    margin-top: 35px;
+  }
+
+  .linkColumn h3,
+  .newsletter h3 {
+    font-size: 27px;
+  }
+
+  .linkColumn a {
+    font-size: 18px;
+  }
+
+  .linkColumn li {
+    margin-bottom: 20px;
+  }
+
+  .newsletter p {
+    margin-bottom: 28px;
+    font-size: 16px;
+  }
+
+  .bottomSection {
+    padding-top: 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .bottomSection p {
+    font-size: 15px;
+  }
+}

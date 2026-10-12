@@ -1,0 +1,150 @@
+.content {
+  width: 100%;
+  max-width: 900px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.number {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #ffc107;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.line {
+  width: 70px;
+  height: 3px;
+  margin-top: 20px;
+  background: #ffc107;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+.imageWrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.details h2 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.details p,
+.message p {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.details p:last-child,
+.message p:last-child {
+  margin-bottom: 0;
+}
+
+.message {
+  padding-top: 40px;
+  border-top: 1px solid #ddd;
+}
+
+.message h2 {
+  margin: 0 0 22px;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.name {
+  margin: 0 0 5px;
+  color: #ffc107;
+  font-family: var(--font-play), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .profile {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .imageWrapper {
+    max-width: 350px;
+  }
+
+  .image {
+    height: 400px;
+  }
+
+  .details h2 {
+    font-size: 22px;
+  }
+
+  .message h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 27px;
+  }
+
+  .imageWrapper {
+    max-width: 100%;
+  }
+
+  .image {
+    height: 350px;
+  }
+
+  .details p,
+  .message p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .message h2 {
+    font-size: 23px;
+  }
+}
