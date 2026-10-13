@@ -106,7 +106,7 @@ export default function Footer() {
 
             <ul>
               <li>
-                <a href="#project-management">Business Name Registration</a>
+                <a href="#project-management">Business Premises Registration</a>
               </li>
               <li>
                 <a href="#design-build">Co-operative Societies Registration</a>
