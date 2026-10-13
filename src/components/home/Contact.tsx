@@ -7,8 +7,8 @@ export default function Contact() {
       <div className={styles.container}>
         <p className={styles.eyebrow}>LET&apos;S BUILD NASARAWA TOGETHER</p>
 
-        <Link href="tel:+234XXXXXXXXXX" className={styles.phone}>
-          +234 800 000 0000
+        <Link href="tel:+2348038213845" className={styles.phone}>
+          +234 803 821 3845
         </Link>
 
         <div className={styles.divider}></div>
@@ -22,8 +22,8 @@ export default function Contact() {
             Shendam Road, Lafia, Nasarawa State, Nigeria
           </p>
 
-          <Link href="mailto:info@mtii.nasarawastate.gov.ng">
-            info@mtii-nasarawa.com.ng
+          <Link href="mailto:mtiinasarawa@gmail.com">
+            mtiinasarawa@gmail.com
           </Link>
         </address>
       </div>
