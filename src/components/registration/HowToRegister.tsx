@@ -183,7 +183,7 @@ export default function HowToRegister() {
             href="/registration/business"
             className={styles.registrationButton}
           >
-            Register Business Premises/Name
+            Register Business Premises
             <span>→</span>
           </Link>
 
