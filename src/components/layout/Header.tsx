@@ -207,7 +207,7 @@ export default function Header() {
                     href="/departments/administration"
                     onClick={closeMobileMenu}
                   >
-                    Administration &amp; Supply
+                    Human Resource &amp; Administration
                   </Link>
                 </li>
                 <li>
