@@ -26,11 +26,6 @@ const tabs: Tab[] = [
     href: "/registration/online-registration",
   },
   {
-    id: "business-name",
-    label: "Register Business Name",
-    href: "/registration/business-name",
-  },
-  {
     id: "business-premises",
     label: "Register Business Premises",
     href: "/registration/business-premises",
@@ -71,11 +66,7 @@ function getActiveTab(pathname: string): string {
     return "online-registration";
   }
 
-  if (pathname.startsWith("/registration/business-name")) {
-    return "business-name";
-  }
-
-  if (pathname.startsWith("/registration/business-premises")) {
+ if (pathname.startsWith("/registration/business-premises")) {
     return "business-premises";
   }
 
