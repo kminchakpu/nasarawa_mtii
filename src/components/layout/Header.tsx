@@ -328,14 +328,6 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
-                    href="/registration/business-name"
-                    onClick={closeMobileMenu}
-                  >
-                    Business Name Registration
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     href="/registration/business-premises"
                     onClick={closeMobileMenu}
                   >
