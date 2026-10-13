@@ -21,9 +21,9 @@ const tabs: Tab[] = [
     href: "/departments/industry-investment",
   },
   {
-    id: "admin-supply",
-    label: "Admin. & Supply",
-    href: "/departments/administration",
+    id: "human-resource",
+    label: "Human Resource & Administration",
+    href: "/departments/human-resource",
   },
   {
     id: "cooperative",
