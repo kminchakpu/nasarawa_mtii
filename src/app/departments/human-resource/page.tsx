@@ -12,14 +12,14 @@ export default function AdminSupplyPage() {
           DEPARTMENT
         </span>
 
-        <h2>Admin. &amp; Supply</h2>
+        <h2>Human Resource</h2>
 
         {/* Director Profile */}
         <div className={styles.directorProfile}>
           <div className={styles.directorImage}>
             <Image
-              src="/images/departments/director-admin-supply.jpg"
-              alt="Director of Administration and Supply"
+              src="/images/team/dir_human_resource.jpg"
+              alt="Director of Human Resource"
               width={400}
               height={500}
               priority
@@ -31,10 +31,10 @@ export default function AdminSupplyPage() {
               DIRECTOR
             </span>
 
-            <h3>Director, Administration &amp; Supply</h3>
+            <h3>Director, Human Resource</h3>
 
             <p>
-              The Department of Administration and Supply supports the Chief Executive in overseeing the Commission&apos;s operations, ensuring that organizational and staff matters are addressed in alignment with Public Service Rules, circulars, extant regulations, and the Commission’s Staff Conditions of Service. This department handles core administrative responsibilities, including the coordination and management of personnel and equipment. As a support unit, it facilitates the seamless functioning of other departments, enabling the effective execution of the Ministry’s programs.
+              The Department of Human Resource supports the Chief Executive in overseeing the Commission&apos;s operations, ensuring that organizational and staff matters are addressed in alignment with Public Service Rules, circulars, extant regulations, and the Commission’s Staff Conditions of Service. This department handles core administrative responsibilities, including the coordination and management of personnel and equipment. As a support unit, it facilitates the seamless functioning of other departments, enabling the effective execution of the Ministry’s programs.
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function AdminSupplyPage() {
         </p>
 
         <p>
-          The Administration Department oversees the daily operations of the
+          The Human Resource Department oversees the daily operations of the
           Ministry, including the management of staff, public relations, legal
           affairs, and human resources (HR) needs. The department plays a
           central role in ensuring the effective coordination and smooth
@@ -68,7 +68,7 @@ export default function AdminSupplyPage() {
 
           <p>
             Through effective planning, coordination, and supervision, the
-            Administration Department helps create an efficient working
+            Human Resource Department helps create an efficient working
             environment that enables other departments to effectively deliver
             on the Ministry&apos;s mandate.
           </p>
