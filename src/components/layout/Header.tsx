@@ -204,7 +204,7 @@ export default function Header() {
               <ul className={styles.dropdownMenu}>
                 <li>
                   <Link
-                    href="/departments/administration"
+                    href="/departments/human-resource"
                     onClick={closeMobileMenu}
                   >
                     Human Resource
