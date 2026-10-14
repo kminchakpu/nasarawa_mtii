@@ -17,7 +17,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "The Commissioner",
     position: "Commissioner, MTII, Nasarawa State",
-    image: "/images/team/commissioner.jpg",
+    image: "/images/team/commissioner.jpeg",
   },
   {
     name: "The Permanent Secretary",
