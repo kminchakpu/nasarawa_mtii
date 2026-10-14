@@ -72,8 +72,8 @@ function getActiveTab(pathname: string): string {
     return "industry-investment";
   }
 
-  if (pathname.startsWith("/departments/administration")) {
-    return "admin-supply";
+  if (pathname.startsWith("/departments/human-resource")) {
+    return "human-resource";
   }
 
   if (pathname.startsWith("/departments/cooperative")) {

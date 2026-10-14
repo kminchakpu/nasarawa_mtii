@@ -3,7 +3,7 @@ import DepartmentTabs from "@/components/departments/DepartmentTabs";
 import styles from "@/components/departments/DepartmentTabs.module.css";
 import Footer from "@/components/layout/Footer";
 
-export default function AdminSupplyPage() {
+export default function HumanResourcePage() {
   return (
     <>
     <DepartmentTabs>
