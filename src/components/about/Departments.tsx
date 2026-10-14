@@ -12,7 +12,7 @@ interface Department {
 
 const departments: Department[] = [
   {
-    title: "Human Resource & Administration",
+    title: "Human Resource",
     description:
       "The Human Resource & Administration Department oversees the daily operations of the Ministry, including the management of staff, public relations, legal affairs, and human resources (HR) needs. This department is responsible for monitoring the Ministry's performance and making strategic decisions to guide future initiatives and ensure organizational success.",
     href: "/departments/human-resource",

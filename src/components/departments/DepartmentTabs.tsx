@@ -22,7 +22,7 @@ const tabs: Tab[] = [
   },
   {
     id: "human-resource",
-    label: "Human Resource & Administration",
+    label: "Human Resource",
     href: "/departments/human-resource",
   },
   {
