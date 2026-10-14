@@ -19,13 +19,13 @@ const directors: Director[] = [
     id: "human-resource",
     name: "Aisha Ahmad Almakura",
     title: "Director,Human Resource Department",
-    image: "/images/team/dir-human-resource.jpg",
+    image: "/images/team/dir-human-resource.jpeg",
   },
   {
     id: "cooperative",
     name: "Bilhatu Yusuf Alizi (Mrs.)",
     title: "Director, Cooperative & Thrift Department",
-    image: "/images/team/dir-cooperative.jpg",
+    image: "/images/team/dir-cooperative.jpeg",
   },
   {
     id: "finance",
