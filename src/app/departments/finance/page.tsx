@@ -28,7 +28,7 @@ export default function FinanceAccountPage() {
 
             <div className={styles.directorInfo}>
               <span className={styles.directorLabel}>
-                DIRECTOR
+                Abdullahi Mahmud Muhammed
               </span>
 
               <h3>Director, Finance &amp; Account</h3>

@@ -45,6 +45,10 @@ export default function Hero() {
             <Link href="/about" className={styles.secondaryButton}>
               Learn More
             </Link>
+
+            <Link href="/registration-fees" className={styles.primaryButton}>
+              Registration Fees
+            </Link>
           </div>
         </div>
       </div>

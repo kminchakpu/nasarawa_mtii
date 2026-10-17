@@ -180,7 +180,7 @@ export default function HowToRegister() {
 
         <div className={styles.registrationButtons}>
           <Link
-            href="/registration/business"
+            href="/registration/business-premises"
             className={styles.registrationButton}
           >
             Register Business Premises

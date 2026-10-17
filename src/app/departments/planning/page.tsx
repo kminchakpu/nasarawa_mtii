@@ -28,7 +28,7 @@ export default function PlanningPage() {
 
             <div className={styles.directorInfo}>
               <span className={styles.directorLabel}>
-                DIRECTOR
+                Liman Abdullahi Musa 
               </span>
 
               <h3>Director, Planning, Research &amp; Statistics</h3>

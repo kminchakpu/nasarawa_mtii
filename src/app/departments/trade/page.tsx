@@ -28,7 +28,7 @@ export default function TradePage() {
 
             <div className={styles.directorInfo}>
               <span className={styles.directorLabel}>
-                DIRECTOR
+                Ahmed Otaki Agbo II
               </span>
 
               <h3>Director, Trade</h3>
