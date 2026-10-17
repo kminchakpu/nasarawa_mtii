@@ -22,8 +22,8 @@ export default function Contact() {
             Shendam Road, Lafia, Nasarawa State, Nigeria
           </p>
 
-          <Link href="mailto:mtiinasarawa@gmail.com">
-            mtiinasarawa@gmail.com
+          <Link href="mailto:nasarawamtii@gmail.com">
+            nasarawamtii@gmail.com
           </Link>
         </address>
       </div>
