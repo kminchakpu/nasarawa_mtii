@@ -18,7 +18,7 @@ export default function FinanceAccountPage() {
           <div className={styles.directorProfile}>
             <div className={styles.directorImage}>
               <Image
-                src="/images/departments/director-finance-account.jpg"
+                src="/images/team/dir_finance.jpeg"
                 alt="Director of Finance and Account"
                 width={400}
                 height={500}

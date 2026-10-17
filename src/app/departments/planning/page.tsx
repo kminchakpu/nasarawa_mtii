@@ -18,7 +18,7 @@ export default function PlanningPage() {
           <div className={styles.directorProfile}>
             <div className={styles.directorImage}>
               <Image
-                src="/images/departments/director-planning.jpg"
+                src="/images/team/dir_planning.jpg"
                 alt="Director of Planning, Research and Statistics"
                 width={400}
                 height={500}

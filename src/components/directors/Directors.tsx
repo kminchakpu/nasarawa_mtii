@@ -31,7 +31,7 @@ const directors: Director[] = [
     id: "finance",
     name: "Director, Finance",
     title: "Finance & Accounts Department",
-    image: "/images/directors/director-finance.jpg",
+    image: "/images/team/dir_finance.jpeg",
   },
     {
     id: "planning",

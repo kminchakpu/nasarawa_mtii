@@ -15,14 +15,14 @@ const teamMembers: TeamMember[] = [
     image: "/images/team/governor.jpg",
   },
   {
-    name: "The Commissioner",
-    position: "Commissioner, MTII, Nasarawa State",
+    name: "Mohammed Sani Otto",
+    position: "Honourable Commissioner, MTII, Nasarawa State",
     image: "/images/team/commissioner.jpeg",
   },
   {
-    name: "The Permanent Secretary",
-    position: "Permanent Secretary, MTII, Nasarawa State",
-    image: "/images/team/permanent-secretary.jpg",
+    name: "Khadijat Nuhu Oshafu",
+    position: "The Permanent Secretary, MTII, Nasarawa State",
+    image: "/images/team/permanent-secretary.jpeg",
   },
 ];
 

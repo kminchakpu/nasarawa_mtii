@@ -17,7 +17,7 @@ export default function IndustryInvestmentPage() {
           <div className={styles.directorProfile}>
             <div className={styles.directorImage}>
               <Image
-                src="/images/team/dir-investment.jpg"
+                src="/images/team/dir_investment.jpg"
                 alt="Director of Industry and Investment"
                 width={400}
                 height={500}
@@ -26,7 +26,7 @@ export default function IndustryInvestmentPage() {
             </div>
 
             <div className={styles.directorInfo}>
-              <span className={styles.directorLabel}>DIRECTOR</span>
+              <span className={styles.directorLabel}>Catherine John Bako (Mrs.)</span>
 
               <h3>Director, Industry &amp; Investment</h3>
 

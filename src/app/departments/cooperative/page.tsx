@@ -18,7 +18,7 @@ export default function CooperativePage() {
           <div className={styles.directorProfile}>
             <div className={styles.directorImage}>
               <Image
-                src="/images/departments/director-cooperative.jpg"
+                src="/images/team/dir_cooperative.jpeg"
                 alt="Director of Cooperative and Thrift"
                 width={400}
                 height={500}
@@ -27,7 +27,7 @@ export default function CooperativePage() {
             </div>
 
             <div className={styles.directorInfo}>
-              <span className={styles.directorLabel}>DIRECTOR</span>
+              <span className={styles.directorLabel}>Bilhatu Yusuf Alizi (Mrs.)</span>
 
               <h3>Director, Cooperative &amp; Thrift</h3>
 

@@ -8,7 +8,7 @@ export default function PermanentSecretaryContent() {
         {/* Image */}
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/leadership/permanent-secretary.jpg"
+            src="/images/team/permanent-secretary.jpeg"
             alt="Permanent Secretary, Nasarawa State Ministry of Trade, Industry and Investment"
             width={500}
             height={600}

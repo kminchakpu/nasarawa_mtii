@@ -18,7 +18,7 @@ export default function HumanResourcePage() {
         <div className={styles.directorProfile}>
           <div className={styles.directorImage}>
             <Image
-              src="/images/team/dir_human_resource.jpg"
+              src="/images/team/dir_human-resource.jpeg"
               alt="Director of Human Resource"
               width={400}
               height={500}
@@ -28,7 +28,7 @@ export default function HumanResourcePage() {
 
           <div className={styles.directorInfo}>
             <span className={styles.directorLabel}>
-              DIRECTOR
+              Aisha Ahmad Almakura
             </span>
 
             <h3>Director, Human Resource</h3>

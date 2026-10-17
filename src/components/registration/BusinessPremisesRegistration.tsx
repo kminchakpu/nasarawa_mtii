@@ -211,7 +211,7 @@ export default function BusinessPremisesRegistration() {
 
         <div className={styles.resourceButtons}>
           <a
-            href="https://www.apps.mtiinasarawa.com.ng/register"
+            href="https://app.mtiinasarawa.com.ng/login"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.resourceButton}

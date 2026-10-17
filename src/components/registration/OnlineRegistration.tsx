@@ -13,7 +13,7 @@ export default function OnlineRegistration() {
         <p>
           The Ministry of Trade, Industry, and Investment is proud to introduce
           an efficient and user-friendly online platform for the registration
-          of Business Names, Business Premises (with the Department of Trade),
+          of Business Premises (with the Department of Trade),
           as well as Non-Governmental Organizations (NGOs), Community-Based
           Organizations (CBOs), Faith-Based Organizations (FBOs), and
           Cooperative Societies (with the Department of Cooperative).

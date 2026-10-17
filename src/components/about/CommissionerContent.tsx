@@ -15,7 +15,7 @@ export default function CommissionerContent() {
       <div className={styles.profile}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/team/commissioner.jpg"
+            src="/images/team/commissioner.jpeg"
             alt="Commissioner, Nasarawa State Ministry of Trade, Industry and Investment"
             className={styles.image}
             width={600}
@@ -53,7 +53,7 @@ export default function CommissionerContent() {
         <h2>Message from the Commissioner</h2>
 
         <p>
-          I am xxxxxxxx, the Honourable Commissioner of the Ministry of Trade, Industry, and Investment (MTII), a role I have been privileged to hold for over 12 months. During this time, I have developed a deep passion for our mission to foster economic growth and create opportunities for businesses to thrive. His Excellency, the Executive Governor of Nasarawa State, Abdullahi A. Sule, entrusted me with the responsibility of leading this vital Ministry, and it has been an honour to contribute to its vision and mission.
+          I am Mohammed Sani Otto, the Honourable Commissioner of the Ministry of Trade, Industry, and Investment (MTII), a role I have been privileged to hold for over 12 months. During this time, I have developed a deep passion for our mission to foster economic growth and create opportunities for businesses to thrive. His Excellency, the Executive Governor of Nasarawa State, Abdullahi A. Sule, entrusted me with the responsibility of leading this vital Ministry, and it has been an honour to contribute to its vision and mission.
         </p>
 
         <p>
@@ -74,7 +74,7 @@ export default function CommissionerContent() {
         <p>
           Sincerely,
           <br />
-          <span className={styles.name}>John Doe</span>
+          <span className={styles.name}>Mohammed Sani Otto</span>
           <br />
           Honourable Commissioner
         </p>
