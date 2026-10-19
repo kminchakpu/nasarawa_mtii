@@ -76,12 +76,7 @@ export default function OnlineRegistration() {
         </p>
 
         <ul className={styles.contentList}>
-          <li>
-            <strong>Business Name Registration:</strong> Secure your business
-            identity and check name availability in real-time.
-          </li>
-
-          <li>
+           <li>
             <strong>Business Premises Registration:</strong> Obtain permits to
             operate legally and upload documentation directly.
           </li>
@@ -192,7 +187,7 @@ export default function OnlineRegistration() {
 
         <div className={styles.resourceButtons}>
           <a
-            href="https://www.apps.mtiinasarawa.com.ng/register"
+            href="https://www.app.mtiinasarawa.com.ng/register"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.resourceButton}
