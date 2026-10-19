@@ -302,7 +302,7 @@ export default function GrievanceRedressPage() {
               </Link>
 
               <Link
-                href="/business-enabling-reforms/faqs"
+                href="/faqs"
                 className={styles.resourceButton}
               >
                 <span>View FAQs</span>
