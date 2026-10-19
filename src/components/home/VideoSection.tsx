@@ -11,7 +11,7 @@ const videos = [
     title: "MTII Grievance Redress Mechanism",
     description:
       "Learn about the grievance redress mechanism in place at the Ministry of Trade, Industry and Investment.",
-    thumbnail: "/images/videos/grievance.jpg",
+    thumbnail: "/images/grievance.jpg",
     url: "https://youtube.com/shorts/muGsXtOM7hQ?feature=share",
   },
   {
