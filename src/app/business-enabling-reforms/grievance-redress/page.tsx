@@ -294,7 +294,7 @@ export default function GrievanceRedressPage() {
 
             <div className={styles.resourceButtons}>
               <Link
-                href="/contact"
+                href="/grievance-redress"
                 className={styles.resourceButton}
               >
                 <span>Submit a Grievance</span>
