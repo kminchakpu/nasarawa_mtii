@@ -8,11 +8,11 @@ import styles from "./VideoSection.module.css";
 const videos = [
   {
     id: 1,
-    title: "Invest in Nasarawa State",
+    title: "MTII Grievance Redress Mechanism",
     description:
-      "Discover the opportunities that make Nasarawa State a preferred investment destination.",
-    thumbnail: "/images/videos/investment.jpg",
-    url: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
+      "Learn about the grievance redress mechanism in place at the Ministry of Trade, Industry and Investment.",
+    thumbnail: "/images/videos/grievance.jpg",
+    url: "https://youtube.com/shorts/muGsXtOM7hQ?feature=share",
   },
   {
     id: 2,
