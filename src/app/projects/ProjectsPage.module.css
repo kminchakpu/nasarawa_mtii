@@ -1,0 +1,108 @@
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: clip;
+  background-color: #071d2b;
+  color: #ffffff;
+}
+
+/* Page title section */
+.pageTitle {
+  position: relative;
+  margin-top: 80px;
+  width: 100%;
+  padding: 65px 0 55px;
+  background-color: #202529;
+  border-bottom: 3px solid rgba(255, 176, 0, 0.35);
+}
+
+.container {
+  width: min(100% - 48px, 1440px);
+  margin-inline: auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #ffb000;
+  font-family: var(--font-play), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.pageTitle h1 {
+  max-width: 900px;
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-family: var(--font-play), sans-serif;
+  font-size: clamp(36px, 5vw, 46px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.pageTitle p {
+  max-width: 850px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Projects tabs wrapper */
+.projectsWrapper {
+  width: 100%;
+  padding: 45px 0 80px;
+  background-color: #202529;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .pageTitle {
+    padding: 50px 0 40px;
+  }
+
+  .pageTitle h1 {
+    font-size: clamp(32px, 5vw, 44px);
+  }
+
+  .pageTitle p {
+    font-size: 16px;
+  }
+
+  .projectsWrapper {
+    padding: 35px 0 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .pageTitle {
+    padding: 40px 0 30px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .pageTitle h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+  }
+
+  .pageTitle p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .projectsWrapper {
+    padding: 25px 0 45px;
+  }
+}
