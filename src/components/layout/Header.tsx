@@ -320,6 +320,14 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
+                    href="/registration-fees"
+                    onClick={closeMobileMenu}
+                  >
+                    Registration Fees
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/registration/online-registration"
                     onClick={closeMobileMenu}
                   >
