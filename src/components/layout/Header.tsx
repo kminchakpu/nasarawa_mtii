@@ -245,49 +245,11 @@ export default function Header() {
             </li>
 
             {/* Projects */}
-            <li
-              className={`${styles.dropdown} ${
-                openDropdown === "projects" ? styles.dropdownOpen : ""
-              }`}
-            >
-              <button
-                type="button"
-                className={styles.dropdownToggle}
-                onClick={() => toggleDropdown("projects")}
-                aria-expanded={openDropdown === "projects"}
-              >
-                <span>Projects</span>
-                <span
-                  className={styles.chevron}
-                  aria-hidden="true"
-                ></span>
-              </button>
-
-              <ul className={styles.dropdownMenu}>
-                <li>
-                  <Link href="/projects" onClick={closeMobileMenu}>
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/projects/completed"
-                    onClick={closeMobileMenu}
-                  >
-                    Completed Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/projects/ongoing" onClick={closeMobileMenu}>
-                    Ongoing Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/projects/proposed" onClick={closeMobileMenu}>
-                    Proposed Projects
-                  </Link>
-                </li>
-              </ul>
+                   
+            <li>
+              <Link href="/projects" onClick={closeMobileMenu}>
+                Projects
+              </Link>
             </li>
 
             {/* Registration */}
